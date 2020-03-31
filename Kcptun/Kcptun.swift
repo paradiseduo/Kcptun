@@ -8,6 +8,10 @@
 
 import Foundation
 
+let KCPTUN_START = Notification.Name("KCPTUN_START")
+let KCPTUN_STOP = Notification.Name("KCPTUN_STOP")
+let KCPTUN_ON = "KcptunOn"
+
 class Kcptun {
     let kcptun = Bundle.main.path(forResource: "client_darwin_amd64", ofType: nil)
     static let shared = Kcptun()
@@ -18,10 +22,11 @@ class Kcptun {
         if let t = self.task, t.isRunning {
             return
         }
+        NotificationCenter.default.post(name: KCPTUN_START, object: nil)
         async(shellPath: kcptun!, arguments: Profile.shared.arguments(), output: { (line) in
             print(line)
         }) { (finish) in
-            print("Kcptun finish!")
+            print("Kcptun turn off!")
         }
     }
     
@@ -30,6 +35,7 @@ class Kcptun {
             t.terminate()
         }
         task = nil
+        NotificationCenter.default.post(name: KCPTUN_STOP, object: nil)
     }
 
     func shellOutput() {

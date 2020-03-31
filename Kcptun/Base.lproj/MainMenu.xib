@@ -40,6 +40,18 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="gsP-RF-Cl8"/>
+                <menuItem title="Check Update" id="z7Q-zw-6Fo">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="checkUpdate:" target="0h6-2A-v8N" id="ZoG-Gp-wN3"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Feedback" id="YZE-kv-Xfz">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="feedbackTap:" target="0h6-2A-v8N" id="Irj-b2-dvO"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="About" id="OkI-RB-FGS">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

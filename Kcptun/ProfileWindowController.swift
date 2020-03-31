@@ -89,5 +89,6 @@ class ProfileWindowController: NSWindowController, NSWindowDelegate {
 
         }
         Profile.shared.saveProfile()
+        self.window?.close()
     }
 }

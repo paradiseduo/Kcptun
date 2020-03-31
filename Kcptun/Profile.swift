@@ -28,7 +28,7 @@ class Profile {
     
     var json: [String: AnyObject] {
         get {
-            let conf:[String: AnyObject] = ["localPort": ":\(self.localPort)" as AnyObject,
+            let conf:[String: AnyObject] = ["localPort": "\(self.localPort)" as AnyObject,
                                             "host": "\(self.host)" as AnyObject,
                                             "remotePort": "\(self.remotePort)" as AnyObject,
                                             "key": self.key as AnyObject,
