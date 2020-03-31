@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Kcptun" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="0h6-2A-v8N" customClass="StatusMenuManager" customModule="Kcptun" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="M8j-Sh-EcW" id="lP9-Ol-1Lq"/>
+                <outlet property="switchLabel" destination="T6c-in-eKX" id="LGA-Oi-7RA"/>
+                <outlet property="toggleRunning" destination="tRX-WG-ubg" id="dcK-us-Ij8"/>
+            </connections>
+        </customObject>
+        <menu id="M8j-Sh-EcW">
+            <items>
+                <menuItem title="Kcptun: On" enabled="NO" id="T6c-in-eKX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Turn Kcptun On" id="tRX-WG-ubg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="powerSwitch:" target="0h6-2A-v8N" id="v9N-Ay-PoN"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="8Q9-aM-fXG"/>
+                <menuItem title="Kcptun Setting" id="aE9-vQ-eLz">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="setting:" target="0h6-2A-v8N" id="C44-LO-LZ7"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="gsP-RF-Cl8"/>
+                <menuItem title="About" id="OkI-RB-FGS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="aboutMe:" target="0h6-2A-v8N" id="Nch-CM-bws"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="AUJ-up-exv"/>
+                <menuItem title="Quit" id="8pN-WD-w01">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="0h6-2A-v8N" id="QF6-g3-B63"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="139" y="-112"/>
+        </menu>
+    </objects>
+</document>

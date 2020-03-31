@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */; };
+		BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */ = {isa = PBXBuildFile; fileRef = BEBF3CC42433270000358D88 /* client_darwin_amd64 */; };
+		BEBF3CC72433271A00358D88 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CC62433271A00358D88 /* Profile.swift */; };
+		BEBF3CD22433385800358D88 /* ProfileWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEBF3CD12433385800358D88 /* ProfileWindowController.xib */; };
+		BEBF3CEC24336B4100358D88 /* Kcptun.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CEB24336B4100358D88 /* Kcptun.swift */; };
+		BEBF3CF024336BCC00358D88 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */; };
+		BEFB226724330FC600660C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB226624330FC600660C12 /* AppDelegate.swift */; };
+		BEFB226924330FC800660C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFB226824330FC800660C12 /* Assets.xcassets */; };
+		BEFB226C24330FC800660C12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFB226A24330FC800660C12 /* MainMenu.xib */; };
+		BEFB227824330FC800660C12 /* KcptunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB227724330FC800660C12 /* KcptunTests.swift */; };
+		BEFB228424331BAE00660C12 /* StatusMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB228324331BAE00660C12 /* StatusMenuManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEFB227424330FC800660C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFB225B24330FC600660C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFB226224330FC600660C12;
+			remoteInfo = Kcptun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWindowController.swift; sourceTree = "<group>"; };
+		BEBF3CC42433270000358D88 /* client_darwin_amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = client_darwin_amd64; sourceTree = "<group>"; };
+		BEBF3CC62433271A00358D88 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BEBF3CD12433385800358D88 /* ProfileWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileWindowController.xib; sourceTree = "<group>"; };
+		BEBF3CEB24336B4100358D88 /* Kcptun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kcptun.swift; sourceTree = "<group>"; };
+		BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEFB226324330FC600660C12 /* Kcptun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kcptun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFB226624330FC600660C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEFB226824330FC800660C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEFB226B24330FC800660C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BEFB226D24330FC800660C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFB226E24330FC800660C12 /* Kcptun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kcptun.entitlements; sourceTree = "<group>"; };
+		BEFB227324330FC800660C12 /* KcptunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KcptunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFB227724330FC800660C12 /* KcptunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KcptunTests.swift; sourceTree = "<group>"; };
+		BEFB227924330FC800660C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFB228324331BAE00660C12 /* StatusMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEFB226024330FC600660C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBF3CF024336BCC00358D88 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFB227024330FC800660C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEBF3CED24336BB500358D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEFB225A24330FC600660C12 = {
+			isa = PBXGroup;
+			children = (
+				BEFB226524330FC600660C12 /* Kcptun */,
+				BEFB227624330FC800660C12 /* KcptunTests */,
+				BEFB226424330FC600660C12 /* Products */,
+				BEBF3CED24336BB500358D88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEFB226424330FC600660C12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEFB226324330FC600660C12 /* Kcptun.app */,
+				BEFB227324330FC800660C12 /* KcptunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEFB226524330FC600660C12 /* Kcptun */ = {
+			isa = PBXGroup;
+			children = (
+				BEBF3CC42433270000358D88 /* client_darwin_amd64 */,
+				BEFB226624330FC600660C12 /* AppDelegate.swift */,
+				BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */,
+				BEBF3CD12433385800358D88 /* ProfileWindowController.xib */,
+				BEFB228324331BAE00660C12 /* StatusMenuManager.swift */,
+				BEBF3CC62433271A00358D88 /* Profile.swift */,
+				BEBF3CEB24336B4100358D88 /* Kcptun.swift */,
+				BEFB226824330FC800660C12 /* Assets.xcassets */,
+				BEFB226A24330FC800660C12 /* MainMenu.xib */,
+				BEFB226D24330FC800660C12 /* Info.plist */,
+				BEFB226E24330FC800660C12 /* Kcptun.entitlements */,
+			);
+			path = Kcptun;
+			sourceTree = "<group>";
+		};
+		BEFB227624330FC800660C12 /* KcptunTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEFB227724330FC800660C12 /* KcptunTests.swift */,
+				BEFB227924330FC800660C12 /* Info.plist */,
+			);
+			path = KcptunTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEFB226224330FC600660C12 /* Kcptun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFB227C24330FC800660C12 /* Build configuration list for PBXNativeTarget "Kcptun" */;
+			buildPhases = (
+				BEFB225F24330FC600660C12 /* Sources */,
+				BEFB226024330FC600660C12 /* Frameworks */,
+				BEFB226124330FC600660C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kcptun;
+			productName = Kcptun;
+			productReference = BEFB226324330FC600660C12 /* Kcptun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEFB227224330FC800660C12 /* KcptunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFB227F24330FC800660C12 /* Build configuration list for PBXNativeTarget "KcptunTests" */;
+			buildPhases = (
+				BEFB226F24330FC800660C12 /* Sources */,
+				BEFB227024330FC800660C12 /* Frameworks */,
+				BEFB227124330FC800660C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFB227524330FC800660C12 /* PBXTargetDependency */,
+			);
+			name = KcptunTests;
+			productName = KcptunTests;
+			productReference = BEFB227324330FC800660C12 /* KcptunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEFB225B24330FC600660C12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					BEFB226224330FC600660C12 = {
+						CreatedOnToolsVersion = 11.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					BEFB227224330FC800660C12 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = BEFB226224330FC600660C12;
+					};
+				};
+			};
+			buildConfigurationList = BEFB225E24330FC600660C12 /* Build configuration list for PBXProject "Kcptun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEFB225A24330FC600660C12;
+			productRefGroup = BEFB226424330FC600660C12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEFB226224330FC600660C12 /* Kcptun */,
+				BEFB227224330FC800660C12 /* KcptunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEFB226124330FC600660C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFB226924330FC800660C12 /* Assets.xcassets in Resources */,
+				BEBF3CD22433385800358D88 /* ProfileWindowController.xib in Resources */,
+				BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */,
+				BEFB226C24330FC800660C12 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFB227124330FC800660C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEFB225F24330FC600660C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */,
+				BEBF3CC72433271A00358D88 /* Profile.swift in Sources */,
+				BEFB228424331BAE00660C12 /* StatusMenuManager.swift in Sources */,
+				BEBF3CEC24336B4100358D88 /* Kcptun.swift in Sources */,
+				BEFB226724330FC600660C12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFB226F24330FC800660C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFB227824330FC800660C12 /* KcptunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEFB227524330FC800660C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFB226224330FC600660C12 /* Kcptun */;
+			targetProxy = BEFB227424330FC800660C12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEFB226A24330FC800660C12 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFB226B24330FC800660C12 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEFB227A24330FC800660C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEFB227B24330FC800660C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BEFB227D24330FC800660C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRTKN7NJBD;
+				INFOPLIST_FILE = Kcptun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BEFB227E24330FC800660C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRTKN7NJBD;
+				INFOPLIST_FILE = Kcptun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BEFB228024330FC800660C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KcptunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.KcptunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kcptun.app/Contents/MacOS/Kcptun";
+			};
+			name = Debug;
+		};
+		BEFB228124330FC800660C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KcptunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.KcptunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kcptun.app/Contents/MacOS/Kcptun";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEFB225E24330FC600660C12 /* Build configuration list for PBXProject "Kcptun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFB227A24330FC800660C12 /* Debug */,
+				BEFB227B24330FC800660C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFB227C24330FC800660C12 /* Build configuration list for PBXNativeTarget "Kcptun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFB227D24330FC800660C12 /* Debug */,
+				BEFB227E24330FC800660C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFB227F24330FC800660C12 /* Build configuration list for PBXNativeTarget "KcptunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFB228024330FC800660C12 /* Debug */,
+				BEFB228124330FC800660C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEFB225B24330FC600660C12 /* Project object */;
+}
