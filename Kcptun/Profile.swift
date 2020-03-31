@@ -13,8 +13,8 @@ class Profile {
     static let shared = Profile()
     
     var host: String = "127.0.0.1"
-    var remotePort: String = "29900"
-    var localPort: String = "1087"
+    var remotePort: Int = 29900
+    var localPort: Int = 1087
     var crypt: String = "aes"
     var key: String = "password"
     var mode: String = "fast"
@@ -28,9 +28,9 @@ class Profile {
     
     var json: [String: AnyObject] {
         get {
-            let conf:[String: AnyObject] = ["localPort": "\(self.localPort)" as AnyObject,
-                                            "host": "\(self.host)" as AnyObject,
-                                            "remotePort": "\(self.remotePort)" as AnyObject,
+            let conf:[String: AnyObject] = ["host": "\(self.host)" as AnyObject,
+                                            "localPort": NSNumber(value: self.localPort) as AnyObject,
+                                            "remotePort": NSNumber(value: self.remotePort) as AnyObject,
                                             "key": self.key as AnyObject,
                                             "crypt": self.crypt as AnyObject,
                                             "mode": self.mode as AnyObject,
@@ -48,7 +48,7 @@ class Profile {
     
     public func saveProfile() {
         let user = UserDefaults.standard
-        user.setValue(self.json, forKey: "Profile")
+        user.setValue(self.json, forKey: USERDEFAULTS_PROFILE)
         user.synchronize()
         Kcptun.shared.stop()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1) {
@@ -57,10 +57,10 @@ class Profile {
     }
     
     public func loadProfile() {
-        if let p = UserDefaults.standard.value(forKey: "Profile") as? [String: AnyObject] {
+        if let p = UserDefaults.standard.value(forKey: USERDEFAULTS_PROFILE) as? [String: AnyObject] {
             self.host = p["host"] as! String
-            self.remotePort = p["remotePort"] as! String
-            self.localPort = p["localPort"] as! String
+            self.remotePort = (p["remotePort"] as! NSNumber).intValue
+            self.localPort = (p["localPort"] as! NSNumber).intValue
             self.key = p["key"] as! String
             self.crypt = p["crypt"] as! String
             self.mode = p["mode"] as! String

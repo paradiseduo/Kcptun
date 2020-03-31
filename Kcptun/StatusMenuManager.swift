@@ -20,8 +20,8 @@ class StatusMenuManager: NSObject {
     override func awakeFromNib() {
         updateMainMenu()
         NotificationCenter.default.addObserver(forName: KCPTUN_START, object: nil, queue: OperationQueue.main) { (noti) in
-            if !UserDefaults.standard.bool(forKey: KCPTUN_ON) {
-                UserDefaults.standard.set(true, forKey: KCPTUN_ON)
+            if !UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
+                UserDefaults.standard.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
                 UserDefaults.standard.synchronize()
                 self.updateMainMenu()
             }
@@ -30,7 +30,7 @@ class StatusMenuManager: NSObject {
     
     func updateMainMenu() {
         let defaults = UserDefaults.standard
-        let isOn = defaults.bool(forKey: KCPTUN_ON)
+        let isOn = defaults.bool(forKey: USERDEFAULTS_KCPTUN_ON)
         if isOn {
             switchLabel.title = "Kcptun: On"
             switchLabel.image = NSImage(named: NSImage.statusAvailableName)
@@ -52,12 +52,12 @@ class StatusMenuManager: NSObject {
     
     @IBAction func powerSwitch(_ sender: NSMenuItem) {
         let defaults = UserDefaults.standard
-        let isOn = defaults.bool(forKey: KCPTUN_ON)
+        let isOn = defaults.bool(forKey: USERDEFAULTS_KCPTUN_ON)
         if isOn {
-            defaults.set(false, forKey: KCPTUN_ON)
+            defaults.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
             Kcptun.shared.stop()
         } else {
-            defaults.set(true, forKey: KCPTUN_ON)
+            defaults.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
             Kcptun.shared.start()
         }
         defaults.synchronize()
@@ -84,12 +84,9 @@ class StatusMenuManager: NSObject {
         DispatchQueue.global().async {
             let newVersion = versionChecker.checkNewVersion()
             DispatchQueue.main.async {
-                if (newVersion["newVersion"] as! Bool){
-                    let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
-                    
-                    if (newVersion["newVersion"] as! Bool && alertResult == 1000){
-                        NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/Kcptun/releases")!)
-                    }
+                let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
+                if (newVersion["newVersion"] as! Bool && alertResult == 1000){
+                    NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/Kcptun/releases")!)
                 }
             }
         }

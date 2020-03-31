@@ -12,7 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        if UserDefaults.standard.bool(forKey: "KcptunOn") {
+        if UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
             Kcptun.shared.start()
         }
     }

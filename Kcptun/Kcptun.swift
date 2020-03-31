@@ -10,7 +10,8 @@ import Foundation
 
 let KCPTUN_START = Notification.Name("KCPTUN_START")
 let KCPTUN_STOP = Notification.Name("KCPTUN_STOP")
-let KCPTUN_ON = "KcptunOn"
+let USERDEFAULTS_KCPTUN_ON = "KcptunOn"
+let USERDEFAULTS_PROFILE = "Profile"
 
 class Kcptun {
     let kcptun = Bundle.main.path(forResource: "client_darwin_amd64", ofType: nil)

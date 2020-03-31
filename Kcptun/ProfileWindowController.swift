@@ -30,8 +30,8 @@ class ProfileWindowController: NSWindowController, NSWindowDelegate {
         let profile = Profile.shared
         profile.loadProfile()
         self.host.stringValue = profile.host
-        self.remotePort.stringValue = profile.remotePort
-        self.localPort.stringValue = profile.localPort
+        self.remotePort.stringValue = String(profile.remotePort)
+        self.localPort.stringValue = String(profile.localPort)
         self.crypt.stringValue = profile.crypt
         self.key.stringValue = profile.key
         self.mode.stringValue = profile.mode
@@ -52,43 +52,83 @@ class ProfileWindowController: NSWindowController, NSWindowDelegate {
     @IBAction func saveTap(_ sender: NSButton) {
         let profile = Profile.shared
         profile.host = self.host.stringValue
-        profile.remotePort = self.remotePort.stringValue
-        profile.localPort = self.localPort.stringValue
         profile.crypt = self.crypt.stringValue
         profile.key = self.key.stringValue
         profile.mode = self.mode.stringValue
         profile.nocomp = self.nocomp.isHighlighted
+        if let i = Int(self.remotePort.stringValue), (1<=i && i<=65535) {
+            profile.remotePort = i
+        } else {
+            self.shakeWindows()
+            return
+        }
+        if let i = Int(self.localPort.stringValue), (1<=i && i<=65535) {
+            profile.localPort = i
+        } else {
+            self.shakeWindows()
+            return
+        }
         if let i = Int(self.mtu.stringValue) {
             profile.mtu = i
         } else {
-            
+            self.shakeWindows()
+            return
         }
         if let i = Int(self.sndwnd.stringValue) {
             profile.sndwnd = i
         } else {
-
+            self.shakeWindows()
+            return
         }
         if let i = Int(self.rcvwnd.stringValue) {
             profile.rcvwnd = i
         } else {
-
+            self.shakeWindows()
+            return
         }
         if let i = Int(self.datashard.stringValue) {
             profile.datashard = i
         } else {
-
+            self.shakeWindows()
+            return
         }
         if let i = Int(self.parityshard.stringValue) {
             profile.parityshard = i
         } else {
-
+            self.shakeWindows()
+            return
         }
         if let i = Int(self.dscp.stringValue) {
             profile.dscp = i
         } else {
-
+            self.shakeWindows()
+            return
         }
         Profile.shared.saveProfile()
         self.window?.close()
+    }
+    
+    func shakeWindows() {
+        let numberOfShakes:Int = 8
+        let durationOfShake:Float = 0.5
+        let vigourOfShake:Float = 0.05
+        
+        let frame:CGRect = (window?.frame)!
+        let shakeAnimation = CAKeyframeAnimation()
+        
+        let shakePath = CGMutablePath()
+        
+        shakePath.move(to: CGPoint(x:NSMinX(frame), y:NSMinY(frame)))
+        
+        for _ in 1...numberOfShakes{
+            shakePath.addLine(to: CGPoint(x: NSMinX(frame) - frame.size.width * CGFloat(vigourOfShake), y: NSMinY(frame)))
+            shakePath.addLine(to: CGPoint(x: NSMinX(frame) + frame.size.width * CGFloat(vigourOfShake), y: NSMinY(frame)))
+        }
+        
+        shakePath.closeSubpath()
+        shakeAnimation.path = shakePath
+        shakeAnimation.duration = CFTimeInterval(durationOfShake)
+        window?.animations = ["frameOrigin":shakeAnimation]
+        window?.animator().setFrameOrigin(window!.frame.origin)
     }
 }
