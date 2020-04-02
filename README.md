@@ -28,6 +28,7 @@ then open Terminal.app and input those commands:
 ```bash
 rm -rf ~/Library/Preferences/MacOS.Kcptun.plist
 rm -rf /usr/local/var/log/kcptun
+rm -rf ~/Library/Caches/MacOS.Kcptun
 ```
 
 ## Screenshots
