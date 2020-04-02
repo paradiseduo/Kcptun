@@ -11,6 +11,20 @@ Kcptun is a GUI program for kcptun on MacOS.
 [![platform](https://img.shields.io/badge/platform-osx-green.svg)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/)
 [![License](https://img.shields.io/:license-GPL--3.0--only-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
+## Install
+download [here](https://github.com/paradiseduo/Kcptun/releases)
+
+and unzip file, Drag Kcptun.app to Applications file
+
+## Uninstall
+drop Kcptun.app to Trash
+
+then open Terminal.app and input those commands:
+```bash
+rm -rf ~/Library/Preferences/MacOS.Kcptun.plist
+rm -rf /usr/local/var/log/kcptun
+```
+
 ## Screenshots
 
 ### Menu
