@@ -40,6 +40,25 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="gsP-RF-Cl8"/>
+                <menuItem title="Log Setting" id="gQE-3a-hMu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Log Setting" id="d2e-K8-MGz">
+                        <items>
+                            <menuItem title="View Logs" id="etJ-5m-vJt">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showLog:" target="0h6-2A-v8N" id="p2C-ei-HFC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Clean Logs" id="cEI-6G-Uua">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cleanLogs:" target="0h6-2A-v8N" id="vB9-dP-Zsc"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
                 <menuItem title="Check Update" id="z7Q-zw-6Fo">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

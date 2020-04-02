@@ -85,7 +85,8 @@ class Profile {
                 "--rcvwnd","\(self.rcvwnd)",
                 "--datashard","\(self.datashard)",
                 "--dscp","\(self.dscp)",
-                "--nocomp"
+                "--nocomp",
+                "--log",LOG_PATH
             ]
         } else {
             return ["-r","\(self.host):\(self.remotePort)",
@@ -96,7 +97,8 @@ class Profile {
                 "--sndwnd","\(self.sndwnd)",
                 "--rcvwnd","\(self.rcvwnd)",
                 "--datashard","\(self.datashard)",
-                "--dscp","\(self.dscp)"
+                "--dscp","\(self.dscp)",
+                "--log",LOG_PATH
             ]
         }
     }

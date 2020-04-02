@@ -15,13 +15,21 @@ class StatusMenuManager: NSObject {
     @IBOutlet weak var switchLabel: NSMenuItem!
     @IBOutlet weak var toggleRunning: NSMenuItem!
     
-    var ctrl: ProfileWindowController!
+    var profileW: ProfileWindowController!
+    var logW: LogWindowController!
     
     override func awakeFromNib() {
         updateMainMenu()
         NotificationCenter.default.addObserver(forName: KCPTUN_START, object: nil, queue: OperationQueue.main) { (noti) in
             if !UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
                 UserDefaults.standard.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
+                UserDefaults.standard.synchronize()
+                self.updateMainMenu()
+            }
+        }
+        NotificationCenter.default.addObserver(forName: KCPTUN_STOP, object: nil, queue: OperationQueue.main) { (noti) in
+            if UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
+                UserDefaults.standard.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
                 UserDefaults.standard.synchronize()
                 self.updateMainMenu()
             }
@@ -71,11 +79,35 @@ class StatusMenuManager: NSObject {
         }
     }
     
+    @IBAction func showLog(_ sender: NSMenuItem) {
+        if self.logW != nil {
+            self.logW.close()
+        }
+        let c = LogWindowController(windowNibName: "LogWindowController")
+        self.logW = c
+        c.showWindow(self)
+        c.window?.center()
+        c.window?.makeKeyAndOrderFront(self)
+        NSApp.activate(ignoringOtherApps: true)
+    }
+    
+    @IBAction func cleanLogs(_ sender: NSMenuItem) {
+        CommandLine.async(task: Process(), command: "rm -rf \(LOG_PATH)") { (finish) in
+            print("CleanLog finish")
+            NotificationCenter.default.post(name: LOG_CLEAN_FINISH, object: nil)
+        }
+    }
+    
+    
     @IBAction func setting(_ sender: NSMenuItem) {
-        ctrl = ProfileWindowController(windowNibName: "ProfileWindowController")
-        ctrl.showWindow(self)
-        ctrl.window?.center()
-        ctrl.window?.makeKeyAndOrderFront(self)
+        if self.profileW != nil {
+            self.profileW.close()
+        }
+        let c = ProfileWindowController(windowNibName: "ProfileWindowController")
+        self.profileW = c
+        c.showWindow(self)
+        c.window?.center()
+        c.window?.makeKeyAndOrderFront(self)
         NSApp.activate(ignoringOtherApps: true)
     }
     
