@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BE33FF6724358CAF0053914C /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF6624358CAF0053914C /* CommandLine.swift */; };
 		BE33FF6A243595CF0053914C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF69243595CF0053914C /* Configuration.swift */; };
+		BE33FF772435AFD80053914C /* ToastWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF752435AFD80053914C /* ToastWindowController.swift */; };
+		BE33FF782435AFD80053914C /* ToastWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF762435AFD80053914C /* ToastWindowController.xib */; };
 		BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */; };
 		BE7F9DCA2434CBBA00EFA114 /* LogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */; };
 		BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		BE33FF6624358CAF0053914C /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
 		BE33FF69243595CF0053914C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		BE33FF752435AFD80053914C /* ToastWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindowController.swift; sourceTree = "<group>"; };
+		BE33FF762435AFD80053914C /* ToastWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastWindowController.xib; sourceTree = "<group>"; };
 		BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogWindowController.xib; sourceTree = "<group>"; };
 		BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogWindowController.swift; sourceTree = "<group>"; };
 		BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWindowController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE33FF742435AFC10053914C /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */,
+				BEBF3CD12433385800358D88 /* ProfileWindowController.xib */,
+				BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */,
+				BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */,
+				BE33FF752435AFD80053914C /* ToastWindowController.swift */,
+				BE33FF762435AFD80053914C /* ToastWindowController.xib */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
 		BEBF3CED24336BB500358D88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +133,7 @@
 				BE33FF6624358CAF0053914C /* CommandLine.swift */,
 				BE33FF69243595CF0053914C /* Configuration.swift */,
 				BEC46F002433925800B68C51 /* VersionChecker.swift */,
-				BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */,
-				BEBF3CD12433385800358D88 /* ProfileWindowController.xib */,
-				BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */,
-				BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */,
+				BE33FF742435AFC10053914C /* Windows */,
 				BEFB226824330FC800660C12 /* Assets.xcassets */,
 				BEFB226A24330FC800660C12 /* MainMenu.xib */,
 				BEFB226D24330FC800660C12 /* Info.plist */,
@@ -224,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFB226924330FC800660C12 /* Assets.xcassets in Resources */,
+				BE33FF782435AFD80053914C /* ToastWindowController.xib in Resources */,
 				BEBF3CD22433385800358D88 /* ProfileWindowController.xib in Resources */,
 				BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */,
 				BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */,
@@ -252,6 +267,7 @@
 				BE7F9DCA2434CBBA00EFA114 /* LogWindowController.swift in Sources */,
 				BE33FF6724358CAF0053914C /* CommandLine.swift in Sources */,
 				BEFB228424331BAE00660C12 /* StatusMenuManager.swift in Sources */,
+				BE33FF772435AFD80053914C /* ToastWindowController.swift in Sources */,
 				BEBF3CEC24336B4100358D88 /* Kcptun.swift in Sources */,
 				BEFB226724330FC600660C12 /* AppDelegate.swift in Sources */,
 			);

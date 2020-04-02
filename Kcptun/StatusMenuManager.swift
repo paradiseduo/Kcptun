@@ -17,6 +17,7 @@ class StatusMenuManager: NSObject {
     
     var profileW: ProfileWindowController!
     var logW: LogWindowController!
+    var toastW: ToastWindowController!
     
     override func awakeFromNib() {
         updateMainMenu()
@@ -47,6 +48,8 @@ class StatusMenuManager: NSObject {
             let icon = NSImage(named: "open")
             statusItem.button?.image = icon
             statusItem.menu = statusMenu
+            
+            self.makeToast("Kcptun ON")
         } else {
             switchLabel.title = "Kcptun: Off"
             switchLabel.image = NSImage(named: NSImage.statusUnavailableName)
@@ -55,6 +58,8 @@ class StatusMenuManager: NSObject {
             let icon = NSImage(named: "close")
             statusItem.button?.image = icon
             statusItem.menu = statusMenu
+            
+            self.makeToast("Kcptun OFF")
         }
     }
     
@@ -95,6 +100,7 @@ class StatusMenuManager: NSObject {
         CommandLine.async(task: Process(), command: "rm -rf \(LOG_PATH)") { (finish) in
             print("CleanLog finish")
             NotificationCenter.default.post(name: LOG_CLEAN_FINISH, object: nil)
+            self.makeToast("Logs Cleand")
         }
     }
     
@@ -131,5 +137,16 @@ class StatusMenuManager: NSObject {
     @IBAction func aboutMe(_ sender: NSMenuItem) {
         NSApp.orderFrontStandardAboutPanel(sender);
         NSApp.activate(ignoringOtherApps: true)
+    }
+    
+    func makeToast(_ message: String) {
+        if self.toastW != nil {
+            self.toastW.close()
+        }
+        let c = ToastWindowController.init(windowNibName: "ToastWindowController")
+        self.toastW = c
+        c.message = message
+        c.showWindow(self)
+        c.fadeInHud()
     }
 }
