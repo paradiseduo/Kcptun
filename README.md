@@ -2,10 +2,10 @@
 
 # Kcptun
 
-Kcptun is a GUI program for kcptun on MacOS.
+Kcptun is a GUI program for kcptun on macOS.
 
 [![Swift](https://img.shields.io/badge/swift-5.2-orange.svg)](https://www.python.org/downloads/)
-[![platform](https://img.shields.io/badge/platform-osx-green.svg)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/)
+[![platform](https://img.shields.io/badge/platform-macOS-green.svg)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/)
 [![License](https://img.shields.io/:license-GPL--3.0--only-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ## Version:
