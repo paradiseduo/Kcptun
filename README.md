@@ -13,10 +13,12 @@ Kcptun is a GUI program for kcptun on MacOS.
 
 ## Install
 download [here](https://github.com/paradiseduo/Kcptun/releases)
+
 and unzip file, Drag Kcptun.app to Applications file
 
 ## Uninstall
 drop Kcptun.app to Trash
+
 then open Terminal.app and input those commands:
 ```bash
 rm -rf ~/Library/Preferences/MacOS.Kcptun.plist
