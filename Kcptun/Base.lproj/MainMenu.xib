@@ -16,6 +16,7 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="0h6-2A-v8N" customClass="StatusMenuManager" customModule="Kcptun" customModuleProvider="target">
             <connections>
+                <outlet property="launchItem" destination="rsB-sA-cyE" id="ekH-th-MAM"/>
                 <outlet property="statusMenu" destination="M8j-Sh-EcW" id="lP9-Ol-1Lq"/>
                 <outlet property="switchLabel" destination="T6c-in-eKX" id="LGA-Oi-7RA"/>
                 <outlet property="toggleRunning" destination="tRX-WG-ubg" id="dcK-us-Ij8"/>
@@ -58,6 +59,12 @@
                             </menuItem>
                         </items>
                     </menu>
+                </menuItem>
+                <menuItem title="Launch At Login" id="rsB-sA-cyE">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="launchAtLogin:" target="0h6-2A-v8N" id="kJh-nC-q7a"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="Check Update" id="z7Q-zw-6Fo">
                     <modifierMask key="keyEquivalentModifierMask"/>

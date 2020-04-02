@@ -14,6 +14,7 @@ class StatusMenuManager: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var switchLabel: NSMenuItem!
     @IBOutlet weak var toggleRunning: NSMenuItem!
+    @IBOutlet weak var launchItem: NSMenuItem!
     
     var profileW: ProfileWindowController!
     var logW: LogWindowController!
@@ -49,7 +50,6 @@ class StatusMenuManager: NSObject {
             statusItem.button?.image = icon
             statusItem.menu = statusMenu
             
-            self.makeToast("Kcptun ON")
         } else {
             switchLabel.title = "Kcptun: Off"
             switchLabel.image = NSImage(named: NSImage.statusUnavailableName)
@@ -59,8 +59,8 @@ class StatusMenuManager: NSObject {
             statusItem.button?.image = icon
             statusItem.menu = statusMenu
             
-            self.makeToast("Kcptun OFF")
         }
+        self.launchItem.state = NSControl.StateValue(rawValue: AppDelegate.getLauncherStatus() ? 1 : 0)
     }
     
     @IBAction func powerSwitch(_ sender: NSMenuItem) {
@@ -69,9 +69,11 @@ class StatusMenuManager: NSObject {
         if isOn {
             defaults.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
             Kcptun.shared.stop()
+            self.makeToast("Kcptun OFF")
         } else {
             defaults.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
             Kcptun.shared.start()
+            self.makeToast("Kcptun ON")
         }
         defaults.synchronize()
         updateMainMenu()
@@ -128,6 +130,15 @@ class StatusMenuManager: NSObject {
                 }
             }
         }
+    }
+    
+    @IBAction func launchAtLogin(_ sender: NSMenuItem) {
+        if UserDefaults.standard.bool(forKey: USERDEFAULTS_LAUNCH_AT_LOGIN) {
+            AppDelegate.setLauncherStatus(open: false)
+        } else {
+            AppDelegate.setLauncherStatus(open: true)
+        }
+        self.updateMainMenu()
     }
     
     @IBAction func feedbackTap(_ sender: NSMenuItem) {

@@ -11,6 +11,11 @@
 		BE33FF6A243595CF0053914C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF69243595CF0053914C /* Configuration.swift */; };
 		BE33FF772435AFD80053914C /* ToastWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF752435AFD80053914C /* ToastWindowController.swift */; };
 		BE33FF782435AFD80053914C /* ToastWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF762435AFD80053914C /* ToastWindowController.xib */; };
+		BE33FF942435B4160053914C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF932435B4160053914C /* AppDelegate.swift */; };
+		BE33FF962435B4160053914C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF952435B4160053914C /* ViewController.swift */; };
+		BE33FF982435B4170053914C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF972435B4170053914C /* Assets.xcassets */; };
+		BE33FF9B2435B4170053914C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF992435B4170053914C /* Main.storyboard */; };
+		BE33FFA22435B4970053914C /* StartAtLoginLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE33FF912435B4160053914C /* StartAtLoginLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */; };
 		BE7F9DCA2434CBBA00EFA114 /* LogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */; };
 		BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */; };
@@ -37,11 +42,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BE33FFA12435B4840053914C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				BE33FFA22435B4970053914C /* StartAtLoginLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BE33FF6624358CAF0053914C /* CommandLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
 		BE33FF69243595CF0053914C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BE33FF752435AFD80053914C /* ToastWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindowController.swift; sourceTree = "<group>"; };
 		BE33FF762435AFD80053914C /* ToastWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastWindowController.xib; sourceTree = "<group>"; };
+		BE33FF912435B4160053914C /* StartAtLoginLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartAtLoginLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE33FF932435B4160053914C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE33FF952435B4160053914C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE33FF972435B4170053914C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE33FF9A2435B4170053914C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE33FF9C2435B4170053914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE33FF9D2435B4170053914C /* StartAtLoginLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StartAtLoginLauncher.entitlements; sourceTree = "<group>"; };
 		BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogWindowController.xib; sourceTree = "<group>"; };
 		BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogWindowController.swift; sourceTree = "<group>"; };
 		BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWindowController.swift; sourceTree = "<group>"; };
@@ -64,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE33FF8E2435B4160053914C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEFB226024330FC600660C12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +127,19 @@
 			path = Windows;
 			sourceTree = "<group>";
 		};
+		BE33FF922435B4160053914C /* StartAtLoginLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				BE33FF932435B4160053914C /* AppDelegate.swift */,
+				BE33FF952435B4160053914C /* ViewController.swift */,
+				BE33FF972435B4170053914C /* Assets.xcassets */,
+				BE33FF992435B4170053914C /* Main.storyboard */,
+				BE33FF9C2435B4170053914C /* Info.plist */,
+				BE33FF9D2435B4170053914C /* StartAtLoginLauncher.entitlements */,
+			);
+			path = StartAtLoginLauncher;
+			sourceTree = "<group>";
+		};
 		BEBF3CED24336BB500358D88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +153,7 @@
 			children = (
 				BEFB226524330FC600660C12 /* Kcptun */,
 				BEFB227624330FC800660C12 /* KcptunTests */,
+				BE33FF922435B4160053914C /* StartAtLoginLauncher */,
 				BEFB226424330FC600660C12 /* Products */,
 				BEBF3CED24336BB500358D88 /* Frameworks */,
 			);
@@ -118,6 +164,7 @@
 			children = (
 				BEFB226324330FC600660C12 /* Kcptun.app */,
 				BEFB227324330FC800660C12 /* KcptunTests.xctest */,
+				BE33FF912435B4160053914C /* StartAtLoginLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +201,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE33FF902435B4160053914C /* StartAtLoginLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE33FFA02435B4170053914C /* Build configuration list for PBXNativeTarget "StartAtLoginLauncher" */;
+			buildPhases = (
+				BE33FF8D2435B4160053914C /* Sources */,
+				BE33FF8E2435B4160053914C /* Frameworks */,
+				BE33FF8F2435B4160053914C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StartAtLoginLauncher;
+			productName = StartAtLoginLauncher;
+			productReference = BE33FF912435B4160053914C /* StartAtLoginLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BEFB226224330FC600660C12 /* Kcptun */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEFB227C24330FC800660C12 /* Build configuration list for PBXNativeTarget "Kcptun" */;
@@ -161,6 +225,7 @@
 				BEFB225F24330FC600660C12 /* Sources */,
 				BEFB226024330FC600660C12 /* Frameworks */,
 				BEFB226124330FC600660C12 /* Resources */,
+				BE33FFA12435B4840053914C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -199,6 +264,9 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Mac;
 				TargetAttributes = {
+					BE33FF902435B4160053914C = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					BEFB226224330FC600660C12 = {
 						CreatedOnToolsVersion = 11.4;
 						SystemCapabilities = {
@@ -228,11 +296,21 @@
 			targets = (
 				BEFB226224330FC600660C12 /* Kcptun */,
 				BEFB227224330FC800660C12 /* KcptunTests */,
+				BE33FF902435B4160053914C /* StartAtLoginLauncher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE33FF8F2435B4160053914C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE33FF982435B4170053914C /* Assets.xcassets in Resources */,
+				BE33FF9B2435B4170053914C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEFB226124330FC600660C12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +334,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE33FF8D2435B4160053914C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE33FF962435B4160053914C /* ViewController.swift in Sources */,
+				BE33FF942435B4160053914C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEFB225F24330FC600660C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +379,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BE33FF992435B4170053914C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE33FF9A2435B4170053914C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		BEFB226A24330FC800660C12 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,6 +398,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BE33FF9E2435B4170053914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StartAtLoginLauncher/StartAtLoginLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StartAtLoginLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun.StartAtLoginLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE33FF9F2435B4170053914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StartAtLoginLauncher/StartAtLoginLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StartAtLoginLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun.StartAtLoginLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		BEFB227A24330FC800660C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -501,6 +634,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE33FFA02435B4170053914C /* Build configuration list for PBXNativeTarget "StartAtLoginLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE33FF9E2435B4170053914C /* Debug */,
+				BE33FF9F2435B4170053914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BEFB225E24330FC600660C12 /* Build configuration list for PBXProject "Kcptun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
