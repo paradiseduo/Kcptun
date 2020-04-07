@@ -126,7 +126,7 @@ class StatusMenuManager: NSObject {
             DispatchQueue.main.async {
                 let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
                 if (newVersion["newVersion"] as! Bool && alertResult == 1000){
-                    NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/Kcptun/releases")!)
+                    NSWorkspace.shared.open(URL(string: RELEASE_URL)!)
                 }
             }
         }
@@ -142,7 +142,7 @@ class StatusMenuManager: NSObject {
     }
     
     @IBAction func feedbackTap(_ sender: NSMenuItem) {
-        NSWorkspace.shared.open(URL(string: "https://github.com/paradiseduo/Kcptun/issues")!)
+        NSWorkspace.shared.open(URL(string: ISSUES_URL)!)
     }
     
     @IBAction func aboutMe(_ sender: NSMenuItem) {

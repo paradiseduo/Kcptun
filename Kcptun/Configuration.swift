@@ -26,3 +26,6 @@ let LOG_CLEAN_FINISH = Notification.Name("LOG_CLEAN_FINISH")
 let USERDEFAULTS_LAUNCH_AT_LOGIN = "USERDEFAULTS_LAUNCH_AT_LOGIN"
 let KILL_LAUNCHER = Notification.Name("MacOS_Kcptun_KILL_LAUNCHER")
 let LAUNCHER_APPID = "MacOS.Kcptun.StartAtLoginLauncher"
+
+let ISSUES_URL = "https://github.com/paradiseduo/Kcptun/issues"
+let RELEASE_URL = "https://github.com/paradiseduo/Kcptun/releases"
