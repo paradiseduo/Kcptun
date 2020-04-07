@@ -2,7 +2,7 @@
 //   CommandLine.swift
 //  Kcptun
 //
-//  Created by YouShaoduo on 2020/4/2.
+//  Created by ParadiseDuo on 2020/4/2.
 //  Copyright © 2020 Mac. All rights reserved.
 //
 
