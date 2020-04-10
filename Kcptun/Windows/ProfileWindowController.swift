@@ -10,18 +10,18 @@ import Cocoa
 
 class ProfileWindowController: NSWindowController, NSWindowDelegate {
     
-    @IBOutlet weak var host: NSTextField!
-    @IBOutlet weak var remotePort: NSTextField!
+    @IBOutlet weak var host: EditableNSTextField!
+    @IBOutlet weak var remotePort: EditableNSTextField!
     @IBOutlet weak var crypt: NSComboBox!
-    @IBOutlet weak var localPort: NSTextField!
-    @IBOutlet weak var key: NSTextField!
+    @IBOutlet weak var localPort: EditableNSTextField!
+    @IBOutlet weak var key: EditableNSTextField!
     @IBOutlet weak var mode: NSComboBox!
-    @IBOutlet weak var mtu: NSTextField!
-    @IBOutlet weak var sndwnd: NSTextField!
-    @IBOutlet weak var rcvwnd: NSTextField!
-    @IBOutlet weak var datashard: NSTextField!
-    @IBOutlet weak var parityshard: NSTextField!
-    @IBOutlet weak var dscp: NSTextField!
+    @IBOutlet weak var mtu: EditableNSTextField!
+    @IBOutlet weak var sndwnd: EditableNSTextField!
+    @IBOutlet weak var rcvwnd: EditableNSTextField!
+    @IBOutlet weak var datashard: EditableNSTextField!
+    @IBOutlet weak var parityshard: EditableNSTextField!
+    @IBOutlet weak var dscp: EditableNSTextField!
     @IBOutlet weak var nocomp: NSButton!
 
     override func windowDidLoad() {

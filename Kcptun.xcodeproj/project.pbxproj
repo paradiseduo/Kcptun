@@ -30,6 +30,7 @@
 		BEFB226C24330FC800660C12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFB226A24330FC800660C12 /* MainMenu.xib */; };
 		BEFB227824330FC800660C12 /* KcptunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB227724330FC800660C12 /* KcptunTests.swift */; };
 		BEFB228424331BAE00660C12 /* StatusMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB228324331BAE00660C12 /* StatusMenuManager.swift */; };
+		E8792C022440291A003C2145 /* EditableNSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8792C012440291A003C2145 /* EditableNSTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		BEFB227724330FC800660C12 /* KcptunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KcptunTests.swift; sourceTree = "<group>"; };
 		BEFB227924330FC800660C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEFB228324331BAE00660C12 /* StatusMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuManager.swift; sourceTree = "<group>"; };
+		E8792C012440291A003C2145 /* EditableNSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableNSTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */,
 				BE33FF752435AFD80053914C /* ToastWindowController.swift */,
 				BE33FF762435AFD80053914C /* ToastWindowController.xib */,
+				E8792C012440291A003C2145 /* EditableNSTextField.swift */,
 			);
 			path = Windows;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */,
 				BEBF3CC72433271A00358D88 /* Profile.swift in Sources */,
 				BEC46F012433925800B68C51 /* VersionChecker.swift in Sources */,
+				E8792C022440291A003C2145 /* EditableNSTextField.swift in Sources */,
 				BE33FF6A243595CF0053914C /* Configuration.swift in Sources */,
 				BE7F9DCA2434CBBA00EFA114 /* LogWindowController.swift in Sources */,
 				BE33FF6724358CAF0053914C /* CommandLine.swift in Sources */,

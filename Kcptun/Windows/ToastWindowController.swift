@@ -1,9 +1,9 @@
 //
 //  ToastWindowController.swift
-//  ShadowsocksX-NG
+//  Kcptun
 //
-//  Created by Youssef on 2019/11/6.
-//  Copyright © 2019 qiuyuzhou. All rights reserved.
+//  Created by ParadiseDuo on 2019/11/6.
+//  Copyright © 2019 ParadiseDuo. All rights reserved.
 //
 
 import Cocoa
