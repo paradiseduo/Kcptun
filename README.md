@@ -1,6 +1,10 @@
-![](https://github.com/paradiseduo/Kcptun/blob/master/img/icon.png)
+<h1 align="center">
+  <img src="https://github.com/paradiseduo/Kcptun/blob/master/img/icon.png" alt="Kcptun" width="256">
+  <br>
+  Kcptun
+  <br>
+</h1>
 
-# Kcptun
 
 Kcptun is a GUI program for kcptun on macOS.
 
