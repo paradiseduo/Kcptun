@@ -41,7 +41,7 @@ class ProfileWindowController: NSWindowController, NSWindowDelegate {
         self.datashard.stringValue = String(profile.datashard)
         self.parityshard.stringValue = String(profile.parityshard)
         self.dscp.stringValue = String(profile.dscp)
-        self.nocomp.highlight(profile.nocomp)
+        self.nocomp.state = profile.nocomp ? .on:.off
     }
     
     
