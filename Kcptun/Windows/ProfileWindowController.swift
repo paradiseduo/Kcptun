@@ -55,7 +55,7 @@ class ProfileWindowController: NSWindowController, NSWindowDelegate {
         profile.crypt = self.crypt.stringValue
         profile.key = self.key.stringValue
         profile.mode = self.mode.stringValue
-        profile.nocomp = self.nocomp.isHighlighted
+        profile.nocomp = (self.nocomp.state == .on ? true:false)
         if let i = Int(self.remotePort.stringValue), (1<=i && i<=65535) {
             profile.remotePort = i
         } else {
