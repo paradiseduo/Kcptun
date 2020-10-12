@@ -11,20 +11,17 @@
 		BE33FF6A243595CF0053914C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF69243595CF0053914C /* Configuration.swift */; };
 		BE33FF772435AFD80053914C /* ToastWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF752435AFD80053914C /* ToastWindowController.swift */; };
 		BE33FF782435AFD80053914C /* ToastWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF762435AFD80053914C /* ToastWindowController.xib */; };
-		BE33FF942435B4160053914C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF932435B4160053914C /* AppDelegate.swift */; };
-		BE33FF962435B4160053914C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33FF952435B4160053914C /* ViewController.swift */; };
-		BE33FF982435B4170053914C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF972435B4170053914C /* Assets.xcassets */; };
-		BE33FF9B2435B4170053914C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE33FF992435B4170053914C /* Main.storyboard */; };
-		BE33FFA22435B4970053914C /* StartAtLoginLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE33FF912435B4160053914C /* StartAtLoginLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */; };
 		BE7F9DCA2434CBBA00EFA114 /* LogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */; };
 		BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */; };
 		BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */ = {isa = PBXBuildFile; fileRef = BEBF3CC42433270000358D88 /* client_darwin_amd64 */; };
 		BEBF3CC72433271A00358D88 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CC62433271A00358D88 /* Profile.swift */; };
-		BEBF3CD22433385800358D88 /* ProfileWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEBF3CD12433385800358D88 /* ProfileWindowController.xib */; };
 		BEBF3CEC24336B4100358D88 /* Kcptun.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CEB24336B4100358D88 /* Kcptun.swift */; };
 		BEBF3CF024336BCC00358D88 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */; };
 		BEC46F012433925800B68C51 /* VersionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC46F002433925800B68C51 /* VersionChecker.swift */; };
+		BEDC65282533FC6900374734 /* LoginServiceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC65272533FC6900374734 /* LoginServiceKit.swift */; };
+		BEDC6537253401BD00374734 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEDC6539253401BD00374734 /* Localizable.strings */; };
+		BEDC653F2534027900374734 /* ProfileWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDC65412534027900374734 /* ProfileWindowController.xib */; };
 		BEFB226724330FC600660C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB226624330FC600660C12 /* AppDelegate.swift */; };
 		BEFB226924330FC800660C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFB226824330FC800660C12 /* Assets.xcassets */; };
 		BEFB226C24330FC800660C12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFB226A24330FC800660C12 /* MainMenu.xib */; };
@@ -50,7 +47,6 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				BE33FFA22435B4970053914C /* StartAtLoginLauncher.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,22 +57,20 @@
 		BE33FF69243595CF0053914C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BE33FF752435AFD80053914C /* ToastWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindowController.swift; sourceTree = "<group>"; };
 		BE33FF762435AFD80053914C /* ToastWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastWindowController.xib; sourceTree = "<group>"; };
-		BE33FF912435B4160053914C /* StartAtLoginLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartAtLoginLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE33FF932435B4160053914C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE33FF952435B4160053914C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE33FF972435B4170053914C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BE33FF9A2435B4170053914C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE33FF9C2435B4170053914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE33FF9D2435B4170053914C /* StartAtLoginLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StartAtLoginLauncher.entitlements; sourceTree = "<group>"; };
 		BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogWindowController.xib; sourceTree = "<group>"; };
 		BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogWindowController.swift; sourceTree = "<group>"; };
 		BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWindowController.swift; sourceTree = "<group>"; };
 		BEBF3CC42433270000358D88 /* client_darwin_amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = client_darwin_amd64; sourceTree = "<group>"; };
 		BEBF3CC62433271A00358D88 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		BEBF3CD12433385800358D88 /* ProfileWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileWindowController.xib; sourceTree = "<group>"; };
 		BEBF3CEB24336B4100358D88 /* Kcptun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kcptun.swift; sourceTree = "<group>"; };
 		BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEC46F002433925800B68C51 /* VersionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionChecker.swift; sourceTree = "<group>"; };
+		BEDC65272533FC6900374734 /* LoginServiceKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceKit.swift; sourceTree = "<group>"; };
+		BEDC65302533FEFC00374734 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		BEDC6538253401BD00374734 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BEDC653C253401BE00374734 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BEDC6548253402C100374734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileWindowController.xib; sourceTree = "<group>"; };
+		BEDC6549253402CC00374734 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ProfileWindowController.strings"; sourceTree = "<group>"; };
 		BEFB226324330FC600660C12 /* Kcptun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kcptun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFB226624330FC600660C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEFB226824330FC800660C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,13 +85,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE33FF8E2435B4160053914C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BEFB226024330FC600660C12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */,
-				BEBF3CD12433385800358D88 /* ProfileWindowController.xib */,
+				BEDC65412534027900374734 /* ProfileWindowController.xib */,
 				BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */,
 				BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */,
 				BE33FF752435AFD80053914C /* ToastWindowController.swift */,
@@ -128,19 +115,6 @@
 				E8792C012440291A003C2145 /* EditableNSTextField.swift */,
 			);
 			path = Windows;
-			sourceTree = "<group>";
-		};
-		BE33FF922435B4160053914C /* StartAtLoginLauncher */ = {
-			isa = PBXGroup;
-			children = (
-				BE33FF932435B4160053914C /* AppDelegate.swift */,
-				BE33FF952435B4160053914C /* ViewController.swift */,
-				BE33FF972435B4170053914C /* Assets.xcassets */,
-				BE33FF992435B4170053914C /* Main.storyboard */,
-				BE33FF9C2435B4170053914C /* Info.plist */,
-				BE33FF9D2435B4170053914C /* StartAtLoginLauncher.entitlements */,
-			);
-			path = StartAtLoginLauncher;
 			sourceTree = "<group>";
 		};
 		BEBF3CED24336BB500358D88 /* Frameworks */ = {
@@ -156,7 +130,6 @@
 			children = (
 				BEFB226524330FC600660C12 /* Kcptun */,
 				BEFB227624330FC800660C12 /* KcptunTests */,
-				BE33FF922435B4160053914C /* StartAtLoginLauncher */,
 				BEFB226424330FC600660C12 /* Products */,
 				BEBF3CED24336BB500358D88 /* Frameworks */,
 			);
@@ -167,7 +140,6 @@
 			children = (
 				BEFB226324330FC600660C12 /* Kcptun.app */,
 				BEFB227324330FC800660C12 /* KcptunTests.xctest */,
-				BE33FF912435B4160053914C /* StartAtLoginLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,11 +155,13 @@
 				BE33FF6624358CAF0053914C /* CommandLine.swift */,
 				BE33FF69243595CF0053914C /* Configuration.swift */,
 				BEC46F002433925800B68C51 /* VersionChecker.swift */,
+				BEDC65272533FC6900374734 /* LoginServiceKit.swift */,
 				BE33FF742435AFC10053914C /* Windows */,
 				BEFB226824330FC800660C12 /* Assets.xcassets */,
 				BEFB226A24330FC800660C12 /* MainMenu.xib */,
 				BEFB226D24330FC800660C12 /* Info.plist */,
 				BEFB226E24330FC800660C12 /* Kcptun.entitlements */,
+				BEDC6539253401BD00374734 /* Localizable.strings */,
 			);
 			path = Kcptun;
 			sourceTree = "<group>";
@@ -204,23 +178,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE33FF902435B4160053914C /* StartAtLoginLauncher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE33FFA02435B4170053914C /* Build configuration list for PBXNativeTarget "StartAtLoginLauncher" */;
-			buildPhases = (
-				BE33FF8D2435B4160053914C /* Sources */,
-				BE33FF8E2435B4160053914C /* Frameworks */,
-				BE33FF8F2435B4160053914C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = StartAtLoginLauncher;
-			productName = StartAtLoginLauncher;
-			productReference = BE33FF912435B4160053914C /* StartAtLoginLauncher.app */;
-			productType = "com.apple.product-type.application";
-		};
 		BEFB226224330FC600660C12 /* Kcptun */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEFB227C24330FC800660C12 /* Build configuration list for PBXNativeTarget "Kcptun" */;
@@ -267,9 +224,6 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Mac;
 				TargetAttributes = {
-					BE33FF902435B4160053914C = {
-						CreatedOnToolsVersion = 11.4;
-					};
 					BEFB226224330FC600660C12 = {
 						CreatedOnToolsVersion = 11.4;
 						SystemCapabilities = {
@@ -291,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BEFB225A24330FC600660C12;
 			productRefGroup = BEFB226424330FC600660C12 /* Products */;
@@ -299,28 +254,19 @@
 			targets = (
 				BEFB226224330FC600660C12 /* Kcptun */,
 				BEFB227224330FC800660C12 /* KcptunTests */,
-				BE33FF902435B4160053914C /* StartAtLoginLauncher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BE33FF8F2435B4160053914C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE33FF982435B4170053914C /* Assets.xcassets in Resources */,
-				BE33FF9B2435B4170053914C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BEFB226124330FC600660C12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BEFB226924330FC800660C12 /* Assets.xcassets in Resources */,
 				BE33FF782435AFD80053914C /* ToastWindowController.xib in Resources */,
-				BEBF3CD22433385800358D88 /* ProfileWindowController.xib in Resources */,
+				BEDC653F2534027900374734 /* ProfileWindowController.xib in Resources */,
+				BEDC6537253401BD00374734 /* Localizable.strings in Resources */,
 				BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */,
 				BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */,
 				BEFB226C24330FC800660C12 /* MainMenu.xib in Resources */,
@@ -337,15 +283,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE33FF8D2435B4160053914C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE33FF962435B4160053914C /* ViewController.swift in Sources */,
-				BE33FF942435B4160053914C /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BEFB225F24330FC600660C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +297,7 @@
 				BEFB228424331BAE00660C12 /* StatusMenuManager.swift in Sources */,
 				BE33FF772435AFD80053914C /* ToastWindowController.swift in Sources */,
 				BEBF3CEC24336B4100358D88 /* Kcptun.swift in Sources */,
+				BEDC65282533FC6900374734 /* LoginServiceKit.swift in Sources */,
 				BEFB226724330FC600660C12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,18 +321,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE33FF992435B4170053914C /* Main.storyboard */ = {
+		BEDC6539253401BD00374734 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BE33FF9A2435B4170053914C /* Base */,
+				BEDC6538253401BD00374734 /* en */,
+				BEDC653C253401BE00374734 /* zh-Hans */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BEDC65412534027900374734 /* ProfileWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDC6548253402C100374734 /* Base */,
+				BEDC6549253402CC00374734 /* zh-Hans */,
+			);
+			name = ProfileWindowController.xib;
 			sourceTree = "<group>";
 		};
 		BEFB226A24330FC800660C12 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BEFB226B24330FC800660C12 /* Base */,
+				BEDC65302533FEFC00374734 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -402,50 +351,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BE33FF9E2435B4170053914C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = StartAtLoginLauncher/StartAtLoginLauncher.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = StartAtLoginLauncher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun.StartAtLoginLauncher;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		BE33FF9F2435B4170053914C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = StartAtLoginLauncher/StartAtLoginLauncher.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = StartAtLoginLauncher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun.StartAtLoginLauncher;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		BEFB227A24330FC800660C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -506,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -569,7 +480,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -590,7 +501,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Kcptun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -642,15 +553,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE33FFA02435B4170053914C /* Build configuration list for PBXNativeTarget "StartAtLoginLauncher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE33FF9E2435B4170053914C /* Debug */,
-				BE33FF9F2435B4170053914C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BEFB225E24330FC600660C12 /* Build configuration list for PBXProject "Kcptun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

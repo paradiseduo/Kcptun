@@ -99,11 +99,11 @@ class StatusMenuManager: NSObject {
     }
     
     @IBAction func cleanLogs(_ sender: NSMenuItem) {
-        CommandLine.async(task: Process(), command: "rm -rf \(LOG_PATH)") { (finish) in
+        CommandLine.async(task: Process(), command: "rm -rf \(LOG_PATH)", terminate:  { (finish) in
             print("CleanLog finish")
             NotificationCenter.default.post(name: LOG_CLEAN_FINISH, object: nil)
             self.makeToast("Logs Cleand")
-        }
+        })
     }
     
     

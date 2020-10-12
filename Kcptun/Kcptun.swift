@@ -20,10 +20,10 @@ class Kcptun {
         }
         NotificationCenter.default.post(name: KCPTUN_START, object: nil)
         self.task = Process()
-        CommandLine.async(task: self.task!, shellPath: self.kcptun!, arguments: Profile.shared.arguments()) { (finish) in
+        CommandLine.async(task: self.task!, shellPath: self.kcptun!, arguments: Profile.shared.arguments(), terminate:  { (finish) in
             print("Kcptun turn off!")
             NotificationCenter.default.post(name: KCPTUN_STOP, object: nil)
-        }
+        })
     }
     
     func stop() {
