@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Kcptun
+
+  Created by ParadiseDuo on 2020/10/12.
+  Copyright © 2020 Mac. All rights reserved.
+*/
+
+"Turn Kcptun On" = "Turn Kcptun On";
+"Turn Kcptun Off" = "Turn Kcptun Off";
+"Kcptun: Off" = "Kcptun: Off";
+"Kcptun: On" = "Kcptun: On";

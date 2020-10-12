@@ -1,0 +1,36 @@
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "8pN-WD-w01"; */
+"8pN-WD-w01.title" = "退出";
+
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "OkI-RB-FGS"; */
+"OkI-RB-FGS.title" = "关于";
+
+/* Class = "NSMenuItem"; title = "Kcptun: On"; ObjectID = "T6c-in-eKX"; */
+"T6c-in-eKX.title" = "Kcptun: On";
+
+/* Class = "NSMenuItem"; title = "Feedback"; ObjectID = "YZE-kv-Xfz"; */
+"YZE-kv-Xfz.title" = "问题反馈";
+
+/* Class = "NSMenuItem"; title = "Kcptun Setting"; ObjectID = "aE9-vQ-eLz"; */
+"aE9-vQ-eLz.title" = "⚙ 设置";
+
+/* Class = "NSMenuItem"; title = "Clean Logs"; ObjectID = "cEI-6G-Uua"; */
+"cEI-6G-Uua.title" = "清空日志";
+
+/* Class = "NSMenu"; title = "Log Setting"; ObjectID = "d2e-K8-MGz"; */
+"d2e-K8-MGz.title" = "日志";
+
+/* Class = "NSMenuItem"; title = "View Logs"; ObjectID = "etJ-5m-vJt"; */
+"etJ-5m-vJt.title" = "⚙ 查看日志";
+
+/* Class = "NSMenuItem"; title = "Log Setting"; ObjectID = "gQE-3a-hMu"; */
+"gQE-3a-hMu.title" = "日志";
+
+/* Class = "NSMenuItem"; title = "Launch At Login"; ObjectID = "rsB-sA-cyE"; */
+"rsB-sA-cyE.title" = "开机启动";
+
+/* Class = "NSMenuItem"; title = "Turn Kcptun On"; ObjectID = "tRX-WG-ubg"; */
+"tRX-WG-ubg.title" = "Turn Kcptun On";
+
+/* Class = "NSMenuItem"; title = "Check Update"; ObjectID = "z7Q-zw-6Fo"; */
+"z7Q-zw-6Fo.title" = "检查更新";

@@ -8,6 +8,12 @@
 
 import Foundation
 
+extension String {
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
+}
+
 // Kcptun Helper
 let KCPTUN_START = Notification.Name("KCPTUN_START")
 let KCPTUN_STOP = Notification.Name("KCPTUN_STOP")

@@ -1,0 +1,111 @@
+
+/* Class = "NSComboBoxCell"; 4bm-Ju-hzF.ibShadowedObjectValues[0] = "nomal"; ObjectID = "4bm-Ju-hzF"; */
+"4bm-Ju-hzF.ibShadowedObjectValues[0]" = "nomal";
+
+/* Class = "NSComboBoxCell"; 4bm-Ju-hzF.ibShadowedObjectValues[1] = "fast"; ObjectID = "4bm-Ju-hzF"; */
+"4bm-Ju-hzF.ibShadowedObjectValues[1]" = "fast";
+
+/* Class = "NSComboBoxCell"; 4bm-Ju-hzF.ibShadowedObjectValues[2] = "fast2"; ObjectID = "4bm-Ju-hzF"; */
+"4bm-Ju-hzF.ibShadowedObjectValues[2]" = "fast2";
+
+/* Class = "NSComboBoxCell"; 4bm-Ju-hzF.ibShadowedObjectValues[3] = "fast3"; ObjectID = "4bm-Ju-hzF"; */
+"4bm-Ju-hzF.ibShadowedObjectValues[3]" = "fast3";
+
+/* Class = "NSComboBoxCell"; 4bm-Ju-hzF.ibShadowedObjectValues[4] = "manual"; ObjectID = "4bm-Ju-hzF"; */
+"4bm-Ju-hzF.ibShadowedObjectValues[4]" = "manual";
+
+/* Class = "NSTextFieldCell"; title = "datashard"; ObjectID = "5Va-4r-nq7"; */
+"5Va-4r-nq7.title" = "datashard";
+
+/* Class = "NSTextFieldCell"; title = "RemotePort"; ObjectID = "5aS-8K-a1f"; */
+"5aS-8K-a1f.title" = "服务器端口";
+
+/* Class = "NSTextFieldCell"; title = "Mtu"; ObjectID = "6g0-sW-g95"; */
+"6g0-sW-g95.title" = "Mtu";
+
+/* Class = "NSTextFieldCell"; title = "Crypt"; ObjectID = "Cvt-xe-dl6"; */
+"Cvt-xe-dl6.title" = "Crypt";
+
+/* Class = "NSTextFieldCell"; title = "dscp"; ObjectID = "Cwb-mL-ywI"; */
+"Cwb-mL-ywI.title" = "dscp";
+
+/* Class = "NSTextFieldCell"; title = "nocomp"; ObjectID = "ESS-rV-nAy"; */
+"ESS-rV-nAy.title" = "nocomp";
+
+/* Class = "NSWindow"; title = "Setting"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "设置";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "FhB-MS-OQq"; */
+"FhB-MS-OQq.title" = "取消";
+
+/* Class = "NSButtonCell"; title = "nocomp"; ObjectID = "KhU-pU-fwV"; */
+"KhU-pU-fwV.title" = "nocomp";
+
+/* Class = "NSTextFieldCell"; title = "RemoteHost"; ObjectID = "LiA-1A-edA"; */
+"LiA-1A-edA.title" = "服务器地址";
+
+/* Class = "NSTextFieldCell"; title = "rcvwnd"; ObjectID = "M9j-fs-wzY"; */
+"M9j-fs-wzY.title" = "rcvwnd";
+
+/* Class = "NSTextFieldCell"; placeholderString = "LocalPort"; ObjectID = "NpG-4U-RUB"; */
+"NpG-4U-RUB.placeholderString" = "本地端口";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "Npk-5d-6FO"; */
+"Npk-5d-6FO.title" = "保存";
+
+/* Class = "NSTextFieldCell"; title = "LocalPort"; ObjectID = "Ra3-60-2xc"; */
+"Ra3-60-2xc.title" = "本地端口";
+
+/* Class = "NSTextFieldCell"; placeholderString = "RemoteHost"; ObjectID = "S4z-3e-0DS"; */
+"S4z-3e-0DS.placeholderString" = "服务器地址";
+
+/* Class = "NSTextFieldCell"; title = "Key"; ObjectID = "YL2-3S-FPR"; */
+"YL2-3S-FPR.title" = "Key";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[0] = "aes"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[0]" = "aes";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[1] = "aes-128"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[1]" = "aes-128";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[2] = "aes-192"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[2]" = "aes-192";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[3] = "salsa20"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[3]" = "salsa20";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[4] = "blowfish"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[4]" = "blowfish";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[5] = "twofish"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[5]" = "twofish";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[6] = "cast5"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[6]" = "cast5";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[7] = "3des"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[7]" = "3des";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[8] = "tea"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[8]" = "tea";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[9] = "xtea"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[9]" = "xtea";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[10] = "xor"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[10]" = "xor";
+
+/* Class = "NSComboBoxCell"; bta-Hi-7oQ.ibShadowedObjectValues[11] = "none"; ObjectID = "bta-Hi-7oQ"; */
+"bta-Hi-7oQ.ibShadowedObjectValues[11]" = "none";
+
+/* Class = "NSTextFieldCell"; title = "parityshard"; ObjectID = "iaJ-ce-ZBd"; */
+"iaJ-ce-ZBd.title" = "parityshard";
+
+/* Class = "NSTextFieldCell"; title = "Mode"; ObjectID = "lOw-eq-a6X"; */
+"lOw-eq-a6X.title" = "Mode";
+
+/* Class = "NSTextFieldCell"; placeholderString = "RemotePort"; ObjectID = "nKp-mW-2sO"; */
+"nKp-mW-2sO.placeholderString" = "RemotePort";
+
+/* Class = "NSTextFieldCell"; title = "sndwnd"; ObjectID = "u4Q-y7-9JQ"; */
+"u4Q-y7-9JQ.title" = "sndwnd";

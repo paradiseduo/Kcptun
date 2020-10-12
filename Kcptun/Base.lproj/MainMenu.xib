@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -34,7 +34,7 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="8Q9-aM-fXG"/>
-                <menuItem title="Kcptun Setting" id="aE9-vQ-eLz">
+                <menuItem title="⚙ Kcptun Setting" id="aE9-vQ-eLz">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="setting:" target="0h6-2A-v8N" id="C44-LO-LZ7"/>
@@ -45,7 +45,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Log Setting" id="d2e-K8-MGz">
                         <items>
-                            <menuItem title="View Logs" id="etJ-5m-vJt">
+                            <menuItem title="⚙ View Logs" id="etJ-5m-vJt">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="showLog:" target="0h6-2A-v8N" id="p2C-ei-HFC"/>

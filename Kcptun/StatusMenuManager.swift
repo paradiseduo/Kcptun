@@ -42,24 +42,25 @@ class StatusMenuManager: NSObject {
         let defaults = UserDefaults.standard
         let isOn = defaults.bool(forKey: USERDEFAULTS_KCPTUN_ON)
         if isOn {
-            switchLabel.title = "Kcptun: On"
+            switchLabel.title = "Kcptun: On".localized
             switchLabel.image = NSImage(named: NSImage.statusAvailableName)
-            toggleRunning.title = "Turn Kcptun Off"
+            toggleRunning.title = "Turn Kcptun Off".localized
             
             let icon = NSImage(named: "open")
             statusItem.button?.image = icon
             statusItem.menu = statusMenu
             
         } else {
-            switchLabel.title = "Kcptun: Off"
+            switchLabel.title = "Kcptun: Off".localized
             switchLabel.image = NSImage(named: NSImage.statusUnavailableName)
-            toggleRunning.title = "Turn Kcptun On"
+            toggleRunning.title = "Turn Kcptun On".localized
             
             let icon = NSImage(named: "close")
             statusItem.button?.image = icon
             statusItem.menu = statusMenu
             
         }
+        statusItem.image?.isTemplate = true
         self.launchItem.state = NSControl.StateValue(rawValue: AppDelegate.getLauncherStatus() ? 1 : 0)
     }
     
