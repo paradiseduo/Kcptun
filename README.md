@@ -14,7 +14,7 @@ Kcptun is a GUI program for kcptun on macOS.
 
 ## Version:
 
-v1.3
+v1.4
 
 ![](https://github.com/paradiseduo/Kcptun/blob/master/img/version.png)
 
