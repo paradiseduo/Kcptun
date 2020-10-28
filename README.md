@@ -42,3 +42,6 @@ rm -rf ~/Library/Caches/MacOS.Kcptun
 
 ### Setting
 ![](https://github.com/paradiseduo/Kcptun/blob/master/img/setting.png)
+
+## Star Trend
+[![Stargazers over time](https://starchart.cc/paradiseduo/Kcptun.svg)](https://starchart.cc/paradiseduo/Kcptun)
